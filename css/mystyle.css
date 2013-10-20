@@ -1,0 +1,66 @@
+/* CSS Document */
+#theBanner .banner-content-wrapper{
+  font-family: 'Open Sans','Lucida Sans Unicode','Lucida Grande',sans-serif;
+  background-image: url(../img/banner1_test.jpg);
+  width: 940px;
+  height: 380px;
+}
+
+#theBanner .slide-main-image{
+   float: left;
+   padding: 10px;
+   background-color: white;;
+   border: solid 1px #474747;
+   margin: 30px 0 0 30px;
+}
+
+#theBanner ul{
+  float: left;
+  width: 250px;
+  color: #474747;
+  font-size: 16px;
+  margin: 15px 50px;
+  list-style-image: url(../img/tickGray.png);
+}
+
+#theBanner ul li{
+  margin: 10px 0;
+}
+
+#theBanner .product-buttons{
+  float: left;
+}
+
+#theBanner .main-butt{
+  width: 221px;
+  height: 48px;
+  display: block;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+#theBanner .butt-zkusit{
+  background-image: url(../img/butt_zkusit.png);
+}
+#theBanner .butt-prohlidka{
+  background-image: url(../img/butt_prohlidka.png);
+}
+#theBanner .butt-registrovat{
+  background-image: url(../img/butt_registrovat.png);
+}
+
+#theBanner .banner-border-hline{
+ height: 4px;
+ width: 940px;
+ background-color: #F15A23;
+   margin-bottom: 50px;
+}
+
+.close-tour-butt{
+ position: absolute;
+ z-index: 999;
+ display: block;
+ width: 31px;
+ height: 31px;
+ background: transparent url(../img/back_from_tour.png) no-repeat center center;
+}
