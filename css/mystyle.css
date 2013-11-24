@@ -1,9 +1,14 @@
 /* CSS Document */
-#theBanner .banner-content-wrapper{
+
+/* spam check field hide*/
+input[name=tfield]{display: none;}
+
+.banner-content-wrapper{
   font-family: 'Open Sans','Lucida Sans Unicode','Lucida Grande',sans-serif;
   background-image: url(../img/banner1_test.jpg);
-  width: 940px;
-  height: 380px;
+  width: 880px;
+  height: 320px;
+  padding: 30px;
 }
 
 #theBanner .slide-main-image{
@@ -11,7 +16,6 @@
    padding: 10px;
    background-color: white;;
    border: solid 1px #474747;
-   margin: 30px 0 0 30px;
 }
 
 #theBanner ul{
@@ -19,7 +23,7 @@
   width: 250px;
   color: #474747;
   font-size: 16px;
-  margin: 15px 50px;
+  margin: 0px 50px;
   list-style-image: url(../img/tickGray.png);
 }
 
@@ -49,7 +53,7 @@
   background-image: url(../img/butt_registrovat.png);
 }
 
-#theBanner .banner-border-hline{
+.banner-border-hline{
  height: 4px;
  width: 940px;
  background-color: #F15A23;
@@ -63,4 +67,14 @@
  width: 31px;
  height: 31px;
  background: transparent url(../img/back_from_tour.png) no-repeat center center;
+}
+
+#registrationPanel{
+  position: absolute;
+  visibility: hidden;
+}
+
+#registrationPanel .formFieldHolder{
+  float: left;
+  margin: 0 10px 10px 0;
 }

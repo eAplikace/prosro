@@ -8,10 +8,10 @@ HTML_Header($page_id,'ProSro', $css, $js);
 
 <section id="content" class="container clearfix">
 
-	<h2 class="slogan align-center">InteligentnÃ­ aplikace pro vytvÅ™enÃ­ a sprÃ¡vu smluv pro VaÅ¡e podnikÃ¡nÃ­.<br />
-	258 vzorÅ¯ nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ch smluv a jinÃ½ch dokumentÅ¯ v rÃ¡mci aplikace ZDARMA.</h2>
+	<h2 class="slogan align-center">Inteligentní aplikace pro vytvøení a správu smluv pro Vaše podnikání.<br />
+	258 vzorù nejdùleitìjších smluv a jinıch dokumentù v rámci aplikace ZDARMA.</h2>
   
-	<section id="products-slider" class="ss-slider" style="visibility: hidden; position: absolute;">
+	<section id="products-slider" class="ss-slider index_banners" style="visibility: hidden; position: absolute;">
 	  <a href='#' class='close-tour-butt' title='vypnout prohlidku'></a>
 		<article class="slide">
 		
@@ -20,15 +20,15 @@ HTML_Header($page_id,'ProSro', $css, $js);
 			<div class="slide-button">
 				<span class="dropcap">1</span>
 				<h5>FIDO - Vzory</h5>
-				<span class="description">Vzory smluv a dokumentÅ¯</span>        				
+				<span class="description">Vzory smluv a dokumentù</span>        				
 			</div>
 			
 		  
 			<div class="slide-content">		
          
-				<h2>ZDARMA 248 vzorÅ¯</h2>
-				<p>Je pro VÃ¡s pÅ™ipraveno 248 vzorÅ¯ smluv a dalÅ¡Ã­ch uÅ¾iteÄnÃ½ch dokumentÅ¯, kterÃ© zÃ­skÃ¡te s aplikacÃ­ ZDARMA</p>
-				<p><a class="button slide-link" href="#">Seznam dokumentÅ¯</a></p>
+				<h2>ZDARMA 248 vzorù</h2>
+				<p>Je pro Vás pøipraveno 248 vzorù smluv a dalších uiteènıch dokumentù, které získáte s aplikací ZDARMA</p>
+				<p><a class="button slide-link" href="#">Seznam dokumentù</a></p>
 			  
 			</div>
 			
@@ -41,15 +41,15 @@ HTML_Header($page_id,'ProSro', $css, $js);
 			<div class="slide-button">
 				<span class="dropcap">2</span>
 				<h5>FIDO - Tvorba smluv</h5>
-				<span class="description">VytoÅ™te si smlouvu!</span>        				
+				<span class="description">Vytoøte si smlouvu!</span>        				
 			</div>
 			
 		  
 			<div class="slide-content">		
          
-				<h2>VytvoÅ™te si smlouvu bez poplatkÅ¯ za prÃ¡vnÃ­ sluÅ¾by</h2>
-				<p>PomocÃ­ vzorÅ¯, kterÃ© s aplikacÃ­ zÃ­skÃ¡te spolu s nÃ¡povÄ›dou k ÄÃ¡stem smluv a dokumentÅ¯ bude sestavenÃ­ smlouvy pro vaÅ¡e ÃºÄely hraÄkou.</p>
-				<p><a class="button slide-link" href="#">Chci to vyzkouÅ¡et!</a></p>
+				<h2>Vytvoøte si smlouvu bez poplatkù za právní sluby</h2>
+				<p>Pomocí vzorù, které s aplikací získáte spolu s nápovìdou k èástem smluv a dokumentù bude sestavení smlouvy pro vaše úèely hraèkou.</p>
+				<p><a class="button slide-link" href="#">Chci to vyzkoušet!</a></p>
 			  
 			</div>
 			
@@ -62,15 +62,15 @@ HTML_Header($page_id,'ProSro', $css, $js);
 			<div class="slide-button">
 				<span class="dropcap">3</span>
 				<h5>FIDO - Organizace</h5>
-				<span class="description">Organizace vytvoÅ™enÃ½ch dokumentÅ¯</span>        				
+				<span class="description">Organizace vytvoøenıch dokumentù</span>        				
 			</div>
 			
 		  
 			<div class="slide-content">		
          
-				<h2>Organizace vytvoÅ™enÃ½ch dokumentÅ¯</h2>
-				<p>VytvoÅ™enÃ© smlouvy uÅ¾ nikdy nestratÃ­te. JednoduchÃ½ spÅ¯sob organizace dokumentÅ¯ umoÅ¾Åˆuje uklÃ¡dat smlouvy podle zamÄ›stnancÅ¯, typu smlouvy, nebo jinÃ½ch kritÃ©riÃ­, kterÃ© si sami zadefinujete.</p>
-				<p><a class="button slide-link" href="#">To chci vidÄ›t!</a></p>
+				<h2>Organizace vytvoøenıch dokumentù</h2>
+				<p>Vytvoøené smlouvy u nikdy nestratíte. Jednoduchı spùsob organizace dokumentù umoòuje ukládat smlouvy podle zamìstnancù, typu smlouvy, nebo jinıch kritérií, které si sami zadefinujete.</p>
+				<p><a class="button slide-link" href="#">To chci vidìt!</a></p>
 			  
 			</div>
 			
@@ -78,14 +78,14 @@ HTML_Header($page_id,'ProSro', $css, $js);
 		
 	</section><!-- end #features-slider -->
 	
-   <div id='theBanner'>
+   <div id='theBanner' class='index_banners'>
     
     <div class='banner-content-wrapper'>
       <img src="img/mainImg1_test.jpg" class="slide-main-image" />
     	<ul>
-    	 <li><b>VYTVÃÅ˜ENÃ</b> a sprÃ¡va smluv a dalÅ¡Ã­ch firemnÃ­ch dokumentÅ¯ pomocÃ­ interaktivnÃ­ch vzorÅ¯</li>
-    	 <li><b>NÃPOVÄšDA</b> pÅ™i tvorbÄ› smluv</li>
-    	 <li>K aplikaci <b>ZDARMA</b> zÃ­skejte <b>248 interaktivnÃ­ch vzorÅ¯ smluv a dalÅ¡Ã­ch dokumentÅ¯</b></li>
+    	 <li><b>VYTVÁØENÍ</b> a správa smluv a dalších firemních dokumentù pomocí interaktivních vzorù</li>
+    	 <li><b>NÁPOVÌDA</b> pøi tvorbì smluv</li>
+    	 <li>K aplikaci <b>ZDARMA</b> získejte <b>248 interaktivních vzorù smluv a dalších dokumentù</b></li>
       </ul>
       <div class='product-buttons'>
         <a href='http://google.com' class='butt-zkusit main-butt'></a>
@@ -97,9 +97,43 @@ HTML_Header($page_id,'ProSro', $css, $js);
     <div class='banner-border-hline'></div>
    </div> 
    
+   <div id='registrationPanel' class='index_banners'>
+    <div class='banner-content-wrapper'>
+      <form id='regForm' method='post' action='register.php' style='float:left'>
+       <input type='hidden' name='act' value='proc_reg_form' />
+       <div class='formFieldHolder'>
+        <label>IÈO</label>
+        <input type='text' name='ico' value='' placeholder='IÈO...' />
+       </div>
+       <div class='formFieldHolder'>
+        <label>E-mail</label>
+        <input type='text' name='email' value='' placeholder='email...' />
+       </div>
+       <div class='clear'></div>
+       <div class='formFieldHolder'>
+        <label>Heslo</label>
+        <input type='text' name='psswd' value='' placeholder='heslo...' />
+       </div>
+       <div class='formFieldHolder'>
+        <label>Heslo znova</label>
+        <input type='text' name='psswd_confirm' value='' placeholder='potvrïte heslo...' />
+       </div> 
+       <div class='clear'></div>
+       <div class='checkBoxElementContainer'>
+        <input id='agreement' type='checkbox' name='agreement' value='1' />
+        <label for='agreement'>Souhlasím s obchodními podmínkami</label>
+       </div>
+       <input type='text' name='tfield' value='' placeholder='email' /><!-- this is just spam-check --> 
+       <input type="submit" value="Registrovat" style="margin-bottom: 20px;"/>        
+      </form>
+     </div>
+     <div class='clear'></div>
+     <div class='banner-border-hline'></div>
+   </div>
+   
    
 
-	<h6 class="section-title">Rady a tipy pro VaÅ¡e podnikÃ¡nÃ­</h6>
+	<h6 class="section-title">Rady a tipy pro Vaše podnikání</h6>
 
 	<ul class="post-carousel">
 
@@ -122,7 +156,7 @@ HTML_Header($page_id,'ProSro', $css, $js);
 			<div class="entry-body">
 
 				<a href="single-post.html">
-					<h5 class="title">10 typÅ¯ jak vyuÅ¾Ã­t NOZ 2014</h5>
+					<h5 class="title">10 typù jak vyuít NOZ 2014</h5>
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
@@ -172,7 +206,7 @@ HTML_Header($page_id,'ProSro', $css, $js);
 			<div class="entry-body">
 
 				<a href="single-post.html">
-					<h5 class="title">NeplaÅ¥te drahÃ© prÃ¡vnÃ­ sluÅ¾by</h5>
+					<h5 class="title">Neplate drahé právní sluby</h5>
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
@@ -198,7 +232,7 @@ HTML_Header($page_id,'ProSro', $css, $js);
 			<div class="entry-body">
 
 				<a href="single-post.html">
-					<h5 class="title">I vy mÅ¯Å¾ete na NOZ 2014 zÃ­skat</h5>
+					<h5 class="title">I vy mùete na NOZ 2014 získat</h5>
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
@@ -222,7 +256,7 @@ HTML_Header($page_id,'ProSro', $css, $js);
 			<div class="entry-body">
 
 				<a href="single-post.html">
-					<h5 class="title">Tvorte smlouvy jednoduÅ¡e a rychle</h5>
+					<h5 class="title">Tvorte smlouvy jednoduše a rychle</h5>
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
@@ -270,7 +304,7 @@ HTML_Header($page_id,'ProSro', $css, $js);
 			<div class="entry-body">
 				
 				<blockquote class="simple">
-					<p>Iâ€™ve decided on the photos that I would like you to use on the website. They are attached to this email. Please send them back when youâ€™re finished as they are my only copies. Thanks!</p>
+					<p>I’ve decided on the photos that I would like you to use on the website. They are attached to this email. Please send them back when you’re finished as they are my only copies. Thanks!</p>
 					<small>- Seriously...</small>
 				</blockquote>
 					
@@ -292,7 +326,7 @@ HTML_Header($page_id,'ProSro', $css, $js);
 
 			<div class="entry-body">
 
-			<p><strong>Z vaÅ¡ich dopisÅ¯:</strong> Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+			<p><strong>Z vašich dopisù:</strong> Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
 					
 			</div><!-- end .entry-body -->
 

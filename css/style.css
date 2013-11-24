@@ -417,6 +417,11 @@ input:-moz-placeholder, textarea:-moz-placeholder { color: #b0b0b0; }
 /* jQuery fallback */
 input.placeholder, textarea.placeholder { color: #b0b0b0; }
 
+.checkBoxElementContainer input[type=checkbox] {float: left;}
+.checkBoxElementContainer label {line-height: 30px;}
+
+
+
 /* ---------------------------------------------------------------------- */
 /*	Wrap
 /* ---------------------------------------------------------------------- */

@@ -181,7 +181,7 @@
 					$movingElem.css({
 						'bottom'     : $buttons.innerHeight() + parseInt( $buttons.css('border-bottom-width') ) + 'px',
 						'left'       : slideWidth * settings.pos,
-						'visibility' : 'visible',
+						'visibility' : 'inherit',   //khamyl - orig: visible
 						'width'      : slideWidth + 'px'
 					});
 					

@@ -1,3 +1,20 @@
+//functions
+function is_response_of_type(response, type){
+ //type: -err-|-msg-|-ok-
+ var prefix = response.substring(0,type.length);
+ if(prefix==type) return true;
+ else             return false;   
+}
+
+function parse_response(response, type){
+  //type: -err-|-msg-|-ok-
+  if(is_response_of_type(response, type)) return response.slice(type.length);
+  else                                    return response;
+};
+
+
+
+
 // If JavaScript is enabled remove 'no-js' class and give 'js' class
 jQuery('html').removeClass('no-js').addClass('js');
 
@@ -474,14 +491,20 @@ jQuery(document).ready(function($) {
   	  if( $slider.data('init') === true ){
   	   //console.log(":)");
       }
-  	  $("#theBanner").hide();
+  	  $(".index_banners").css({"position":"absolute", "visibility":"hidden"});
   	  $(".ss-slider").css({"position": "inherit", "visibility": "visible"});
   	 return false;
     });
     
+    $(".butt-registrovat").click(function(){
+      $(".index_banners").css({"position":"absolute", "visibility":"hidden"}); 
+      $("#registrationPanel").css({"position": "inherit", "visibility": "visible"});
+    })
+    
     $(".close-tour-butt").click(function(){
-     $(".ss-slider").css({"position":"absolute", "visibility":"hidden"});
-  	 $("#theBanner").show();
+     //$(".ss-slider").css({"position":"absolute", "visibility":"hidden"});
+     $(".index_banners").css({"position":"absolute", "visibility":"hidden"});
+  	 $("#theBanner").css({"position": "inherit", "visibility": "visible"});
   	 return false;
     });
   })();
@@ -1066,6 +1089,56 @@ jQuery(document).ready(function($) {
 	})();
 
 	/* end Contact Form */
+	
+	/* ---------------------------------------------------------------------- */
+	/*	Registration Form
+	/* ---------------------------------------------------------------------- */
+	
+	(function() {
+
+		// Setup any needed variables.
+		var $form   = $('#regForm'),
+			  $loader = '<img src="img/loader.gif" height="11" width="16" alt="Loading..." />';
+
+		$form.append('<div id="response" class="hidden">');
+		var $response = $('#response');
+		
+		// Do what we need to when form is submitted.
+		$form.on('click', 'input[type=submit]', function(e){
+
+			// Hide any previous response text and show loader
+			$response.hide().html( $loader ).show();
+			
+			// Make AJAX request 
+			var formData = $form.serializeArray();
+			formData.push({name:"ajax", value:"1"});
+			$.ajax({
+    		type	: "POST",
+    		cache	: false,
+    		//async : true,
+    		url		: "register.php",
+    		contentType: "application/x-www-form-urlencoded;charset=windows-1250",
+    		data	: formData,
+    		success: function(data){  
+          // Show response message
+  				if(is_response_of_type(data, "-err-")) $response.html( parse_response(data, "-err-"));
+  				else if(is_response_of_type(data, "-msg-")) $response.html( parse_response(data, "-msg-"));
+  				else if(is_response_of_type(data, "-ok-")) $response.html( parse_response(data, "-ok-"));
+  				else $response.html("Neznámá chyba!");
+  				  				
+  				// If form has been sent succesfully, clear it
+  				if( data.indexOf('error') === -1 )
+  					$form.find('input:not(input[type="submit"], input[name="act"]), textarea, select').val('').attr( 'checked', false );                                                        		       		                                                   
+    	   }
+    	});   
+			
+			// Cancel default action
+			e.preventDefault();
+		});
+
+	})();
+	
+	/* end Registration Form */
 	
 	/* ---------------------------------------------------------------------- */
 	/*	UItoTop (Back to Top)
