@@ -1,42 +1,29 @@
 <?php
+include_once 'admin/class/class.phpmailer.php';
 include_once 'common.php';
-
-
-function process_registration_form($D){
-  $status = true;
-  //spam check
-  if(isset($D['tfield']) && $D['tfield']!='') {err('Spam Attack!!'); $status = false;}
-  
-  //mail check  
-  
-  //ICO check
-  
-  //password check
-  
-  //User Agreement check
-  
-  //Save data
-  
-  //setup confirmation email
-  
-  //Send confirmation email
-  
-  msg("Na Váš email byl zaslán odkaz pro aktivaci Vašeho konta.");
-  
-  return $status;
-}
+include_once 'register_fn.php';
 
 if(!empty($_POST['act']))
   switch($_POST['act']){
     case 'proc_reg_form':
      $status = process_registration_form($_POST);
      if($_POST['ajax']=='1'){
-       if(!$status) echo translate_W1250ToUtf8(ERR.print_errs());
-       else echo translate_W1250ToUtf8(MSG.print_msgs());
+       if(!$status) echo ERR.print_errs();
+       else echo MSG.print_msgs();
        exit;
      }
      break;
     default:
      exit;
   }
+  
+elseif(!empty($_GET['act']))
+ switch($_GET['act']){
+    case 'accountActivation':
+     $status = activate_account_after_registration(urldecode($_GET['email']), $_GET['code']);
+     break;
+    default:
+     exit;
+  }
+
 ?>

@@ -1128,7 +1128,8 @@ jQuery(document).ready(function($) {
   				  				
   				// If form has been sent succesfully, clear it
   				if( data.indexOf('error') === -1 )
-  					$form.find('input:not(input[type="submit"], input[name="act"]), textarea, select').val('').attr( 'checked', false );                                                        		       		                                                   
+  					$form.find('textarea, input[type="text"], input[type="password"]').val('')
+            $form.find('input[type="checkbox"]').attr( 'checked', false );                                                        		       		                                                   
     	   }
     	});   
 			
